@@ -4,6 +4,9 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
+/* MÓDULO CORS */
+var cors = require("cors");
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
@@ -16,6 +19,12 @@ var usuario_colaboradorRouter = require("./routes/rest_usuario_colaborador");
 var colaborador_listaRouter = require("./routes/rest_colaborador_lista");
 
 var app = express();
+
+/* AGREGUE EL MIDDLEWARE CORS */
+app.use(cors());
+
+// view engine setup
+app.set("views", path.join(__dirname, "views"));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
