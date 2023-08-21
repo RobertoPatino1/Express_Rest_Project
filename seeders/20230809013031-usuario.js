@@ -12,6 +12,24 @@ module.exports = {
           email: "jenna@gmail.com",
           password: "qwerty",
         },
+        {
+          idUsuario: 2,
+          nombreUsuario: "John Doe",
+          email: "john@gmail.com",
+          password: "qwerty",
+        },
+        {
+          idUsuario: 3,
+          nombreUsuario: "Walter White",
+          email: "heisenberg@gmail.com",
+          password: "willy_wonka",
+        },
+        {
+          idUsuario: 4,
+          nombreUsuario: "Jesse Pinkman",
+          email: "pinkman@gmail.com",
+          password: "yeah_science",
+        },
       ],
       {}
     );

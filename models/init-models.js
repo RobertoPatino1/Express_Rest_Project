@@ -3,6 +3,7 @@ var _colaborador = require("./colaborador");
 var _colaborador_lista = require("./colaborador_lista");
 var _lista = require("./lista");
 var _producto = require("./producto");
+var _sequelizemeta = require("./sequelizemeta");
 var _usuario = require("./usuario");
 var _usuario_colaborador = require("./usuario_colaborador");
 
@@ -11,6 +12,7 @@ function initModels(sequelize) {
   var colaborador_lista = _colaborador_lista(sequelize, DataTypes);
   var lista = _lista(sequelize, DataTypes);
   var producto = _producto(sequelize, DataTypes);
+  var sequelizemeta = _sequelizemeta(sequelize, DataTypes);
   var usuario = _usuario(sequelize, DataTypes);
   var usuario_colaborador = _usuario_colaborador(sequelize, DataTypes);
 
@@ -36,6 +38,7 @@ function initModels(sequelize) {
     colaborador_lista,
     lista,
     producto,
+    sequelizemeta,
     usuario,
     usuario_colaborador,
   };
