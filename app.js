@@ -5,6 +5,11 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 /* MÓDULO dotenv */
 const dotenv = require("dotenv");
+/* REFERENCIA AL MÓDULO */
+const swaggerUi = require("swagger-ui-express");
+
+/* REFERENCIA AL ARCHIVO GENERADO */
+const swaggerFile = require("./swagger_output.json");
 
 /* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
 dotenv.config();
@@ -32,6 +37,9 @@ app.use("/rest/producto", authenticateJWT, productoRouter);
 
 /* AGREGUE EL MIDDLEWARE CORS */
 app.use(cors());
+
+/* CONFIGURACIÓN DE LA RUTA A LA DOCUMENTACIÓN */
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
