@@ -5,6 +5,11 @@ var router = express.Router();
 const producto = require("../models").producto;
 
 router.get("/findAll/json", function (req, res, next) {
+  const { rol } = req.user;
+
+  if (rol !== "admin") {
+    return res.sendStatus(403);
+  }
   producto
     .findAll({
       attributes: { exclude: ["updatedAt", "createdAt"] },
