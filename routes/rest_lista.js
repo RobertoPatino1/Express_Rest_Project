@@ -14,6 +14,8 @@ router.get("/findAll/json", function (req, res, next) {
     })
     .catch((error) => res.status(400).send(error));
 });
+
+//Find by UsuarioID
 router.get("/findByUsuarioId/:id/json", function (req, res, next) {
   let usuarioId = parseInt(req.params.id);
 
