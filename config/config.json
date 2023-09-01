@@ -14,12 +14,12 @@
     "dialect": "mysql"
   },
   "production": {
-    "url":"mysql://root:ORHJoerh6Kd08FJ5oDtY@containers-us-west-47.railway.app:7382/railway",
+    "url":"mysql://root:aifLFhHdaHwnyRE2rDgN@containers-us-west-147.railway.app:6173/railway",
     "username": "root",
-    "password": "ORHJoerh6Kd08FJ5oDtY",
+    "password": "aifLFhHdaHwnyRE2rDgN",
     "database": "railway",
-    "host": "containers-us-west-47.railway.app",
+    "host": "containers-us-west-147.railway.app",
     "dialect": "mysql",
-    "port":"7382"
+    "port":"6173"
   }
 }
