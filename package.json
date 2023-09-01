@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
     "start": "node ./bin/www",
     "swagger-autogen": "node swagger.js"
   },
