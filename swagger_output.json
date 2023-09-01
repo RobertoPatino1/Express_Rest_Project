@@ -115,7 +115,7 @@
         }
       }
     },
-    "/findByUsuarioId/{id}/json": {
+    "/lista/findByUsuarioId/{id}/json": {
       "get": {
         "description": "",
         "parameters": [
