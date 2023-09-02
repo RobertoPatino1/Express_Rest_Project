@@ -6,12 +6,12 @@
     "description": ""
   },
   "host": "localhost:3000",
-  "basePath": "/rest",
+  "basePath": "/",
   "schemes": [
     "http"
   ],
   "paths": {
-    "/usuario/findAll/json": {
+    "/findAll/json": {
       "get": {
         "description": "",
         "responses": {
@@ -24,7 +24,7 @@
         }
       }
     },
-    "/usuario/findById/{id}/json": {
+    "/findById/{id}/json": {
       "get": {
         "description": "",
         "parameters": [
@@ -48,7 +48,7 @@
         }
       }
     },
-    "/usuario/save": {
+    "/save": {
       "post": {
         "description": "",
         "responses": {
@@ -61,7 +61,7 @@
         }
       }
     },
-    "/usuario/update/{id}": {
+    "/update/{id}": {
       "put": {
         "description": "",
         "parameters": [
@@ -88,7 +88,7 @@
         }
       }
     },
-    "/usuario/delete/{id}": {
+    "/delete/{id}": {
       "delete": {
         "description": "",
         "parameters": [
@@ -115,7 +115,7 @@
         }
       }
     },
-    "/lista/findByUsuarioId/{id}/json": {
+    "/findByUsuarioId/{id}/json": {
       "get": {
         "description": "",
         "parameters": [
