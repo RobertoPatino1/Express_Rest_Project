@@ -5,8 +5,6 @@ var router = express.Router();
 const usuario = require("../models").usuario;
 
 router.get("/findAll/json", function (req, res, next) {
-  /* VERIFICADOR DE AUTORIZACIÓN */
-
   usuario
     .findAll({
       attributes: { exclude: ["updatedAt", "createdAt"] },
