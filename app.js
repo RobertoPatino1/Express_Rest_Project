@@ -3,8 +3,10 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+
 /* MÓDULO dotenv */
 const dotenv = require("dotenv");
+
 /* REFERENCIA AL MÓDULO */
 const swaggerUi = require("swagger-ui-express");
 
@@ -13,6 +15,7 @@ const swaggerFile = require("./swagger_output.json");
 
 /* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
 dotenv.config();
+
 /* MÓDULO CORS */
 var cors = require("cors");
 
