@@ -14,7 +14,6 @@
     "dialect": "mysql"
   },
   "production": {
-    "url":"mysql://root:aifLFhHdaHwnyRE2rDgN@containers-us-west-147.railway.app:6173/railway",
     "username": "root",
     "password": "aifLFhHdaHwnyRE2rDgN",
     "database": "railway",
